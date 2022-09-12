@@ -8,8 +8,10 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(channel, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 try:
     while True:
-        if GPIO.input(channel) == GPIO.LOW:
-            print("wetness!")
+        if (0 == GPIO.input(channel)):
+            print("Detected bingxuehua")
+        else:
+            print("nothing")
         time.sleep(1)
 except KeyboardInterrupt:
     GPIO.cleanup()
