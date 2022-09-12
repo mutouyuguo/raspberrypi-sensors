@@ -14,5 +14,5 @@ try:
         else:
             print("raining!raining!~~")
         time.sleep(1)
-except KeyboradInterrupt:
+except KeyboardInterrupt:
     GPIO.cleanup()

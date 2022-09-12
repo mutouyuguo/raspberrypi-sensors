@@ -14,5 +14,5 @@ try:
         else:
             print("nobody detected!")
         time.sleep(1)
-except KeyboradInterrupt:
+except KeyboardInterrupt:
     GPIO.cleanup()
